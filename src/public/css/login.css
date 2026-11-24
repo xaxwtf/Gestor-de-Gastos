@@ -1,0 +1,39 @@
+
+body {
+    background: linear-gradient(135deg, #e9eef5, #f8f9fa);
+    font-family: Arial, sans-serif;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 12px;
+    padding: 30px !important;
+}
+
+.login-card h3 {
+    font-weight: 700;
+    color: #343a40;
+}
+
+.login-card .form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.login-card .form-control {
+    padding: 11px;
+    border-radius: 8px;
+}
+
+.login-card .form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.login-card .btn {
+    padding: 11px;
+    border-radius: 8px;
+    font-weight: 600;
+}

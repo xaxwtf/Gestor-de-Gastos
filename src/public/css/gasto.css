@@ -1,0 +1,87 @@
+
+/* =========================
+   TARJETA DEL FORMULARIO
+========================= */
+
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 35px !important;
+}
+
+/* =========================
+   CAMPOS DEL FORMULARIO
+========================= */
+
+.form-label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #dce2e8;
+    border-radius: 8px;
+    padding: 11px 13px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Espaciado */
+.mb-3 {
+    margin-bottom: 20px !important;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.btn-outline-secondary {
+    color: #64748b;
+    border-color: #cbd5e1;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #64748b;
+    border-color: #64748b;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 22px !important;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

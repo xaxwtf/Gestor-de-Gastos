@@ -1,0 +1,83 @@
+
+/* =========================
+   ENCABEZADO DEL MENÚ
+========================= */
+
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #718096;
+    font-size: 1rem;
+}
+
+/* =========================
+   CONTENEDOR DEL MENÚ
+========================= */
+
+.menu {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta h2 {
+    color: #2563eb;
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    color: #718096;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+}
