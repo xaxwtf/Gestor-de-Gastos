@@ -43,6 +43,6 @@ app.get('/', (req, res) => {
 
 // Rutas de la aplicación
 app.use('/gastos', require('./routes/gastoRoutes'));
-// app.use('/estadisticas', require('./routes/estadisticaRoutes'));
+app.use('/estadisticas', require('./routes/estadisticaRoutes'));
 
 module.exports = app;

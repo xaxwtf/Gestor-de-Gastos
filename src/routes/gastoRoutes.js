@@ -2,6 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const Categoria = require('../models/categoria');
+const verificarSesion = require('../middlewares/authMiddlewares');
 
 const {
     listarGastos,
@@ -26,15 +27,15 @@ router.get('/crear', async (req, res) => {
 });
 
 // Crear un gasto
-router.post('/', crearGasto);
+router.post('/', verificarSesion, crearGasto);
 
 // Obtener un gasto para editar
-router.get('/:id', obtenerGasto);
+router.get('/:id',verificarSesion, obtenerGasto);
 
 // Actualizar un gasto
-router.put('/:id', editarGasto);
+router.put('/:id', verificarSesion ,editarGasto);
 
 // Eliminar un gasto
-router.delete('/:id', eliminarGasto);
+router.delete('/:id', verificarSesion, eliminarGasto);
 
 module.exports = router;

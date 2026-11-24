@@ -6,7 +6,7 @@ const Categoria = require('../models/categoria');
 const listarGastos = async (req, res) => {
     try {
         const gastos = await Gasto.find().sort({ fecha: -1 });
-        res.render('index', { gastos });
+        res.render('gastos/listar', { gastos });
     } catch (error) {
         res.status(500).send(error.message);
     }
