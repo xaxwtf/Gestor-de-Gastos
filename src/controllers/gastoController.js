@@ -5,7 +5,9 @@ const Categoria = require('../models/categoria');
 // Listar todos los gastos
 const listarGastos = async (req, res) => {
     try {
-        const gastos = await Gasto.find()
+        const gastos = await Gasto.find({
+            usuarioId: req.session.usuarioId
+        })
             .populate('categoriaId')
             .sort({ fecha: -1 });
 
