@@ -12,6 +12,29 @@
 
     <!-- Estilos propios -->
     <link rel="stylesheet" href="/css/login.css">
+
+        <div class="botones-prueba">
+            <button type="button" onclick="completarUsuario1()">
+                Usuario de prueba 1
+            </button>
+
+            <button type="button" onclick="completarUsuario2()">
+                Usuario de prueba 2
+            </button>
+        </div>
+
+        <script>
+            function completarUsuario1() {
+                document.getElementById('email').value = 'xaxwtf@gmail.com';
+                document.getElementById('password').value = 'test123456789';
+            }
+
+            function completarUsuario2() {
+                document.getElementById('email').value = 'usuario2@gmail.com';
+                document.getElementById('password').value = '12345678';
+            }
+        </script>
+
 </head>
 <body>
 

@@ -81,3 +81,17 @@ header p {
         padding: 15px;
     }
 }
+.btn-cerrar-sesion {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn-cerrar-sesion:hover {
+    background-color: #bb2d3b;
+}

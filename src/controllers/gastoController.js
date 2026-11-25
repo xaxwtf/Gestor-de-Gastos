@@ -5,7 +5,10 @@ const Categoria = require('../models/categoria');
 // Listar todos los gastos
 const listarGastos = async (req, res) => {
     try {
-        const gastos = await Gasto.find().sort({ fecha: -1 });
+        const gastos = await Gasto.find()
+            .populate('categoriaId')
+            .sort({ fecha: -1 });
+
         res.render('gastos/listar', { gastos });
     } catch (error) {
         res.status(500).send(error.message);
